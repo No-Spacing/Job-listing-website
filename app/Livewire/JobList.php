@@ -7,6 +7,8 @@ use Livewire\Component;
 use Livewire\WithFileUploads;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\SendResume;
+use App\Models\Job;
+use Livewire\Attributes\Url;
 
 class JobList extends Component
 {
@@ -19,6 +21,9 @@ class JobList extends Component
 
     #[Validate('required|mimes:pdf')]
     public $resume = '';
+
+    #[Url] 
+    public $search = '';
 
     public function submitConverge(){
 
@@ -56,8 +61,19 @@ class JobList extends Component
         
     }
 
+
     public function render()
     {
-        return view('livewire.job-list');
+        if(!$this->search){
+            return view('livewire.job-list')->with([
+                'jobs' => Job::all()
+            ]);
+        }else{
+            return view('livewire.job-list')->with([
+                'jobs' => Job::where('name', 'like', '%' . $this->search . '%')->get()
+                
+            ]);
+        }
+        
     }
 }
