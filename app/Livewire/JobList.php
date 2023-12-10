@@ -64,16 +64,8 @@ class JobList extends Component
 
     public function render()
     {
-        if(!$this->search){
-            return view('livewire.job-list')->with([
-                'jobs' => Job::all()
-            ]);
-        }else{
-            return view('livewire.job-list')->with([
-                'jobs' => Job::where('name', 'like', '%' . $this->search . '%')->get()
-                
-            ]);
-        }
-        
+        return view('livewire.job-list')->with([
+            'jobs' => Job::where('name', 'like', '%' . $this->search . '%')->get()    
+        ]);
     }
 }
