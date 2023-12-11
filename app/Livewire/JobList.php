@@ -2,13 +2,16 @@
 
 namespace App\Livewire;
 
-use Livewire\Attributes\Validate; 
+
 use Livewire\Component;
+use Livewire\Attributes\Validate; 
 use Livewire\WithFileUploads;
+use Livewire\Attributes\Url;
+
 use Illuminate\Support\Facades\Mail;
 use App\Mail\SendResume;
+
 use App\Models\Job;
-use Livewire\Attributes\Url;
 
 class JobList extends Component
 {
