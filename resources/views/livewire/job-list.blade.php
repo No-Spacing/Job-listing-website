@@ -50,17 +50,17 @@
                             <div class="modal-dialog modal-dialog-centered">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Converge</h1>
+                                            <h1 class="modal-title fs-5" id="staticBackdropLabel">{{ $job->name }}</h1>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
 
                                     <div class="modal-body">
-                                        @if (session()->has('messageConverge'))
+                                        @if (session()->has('message'))
                                             <div class="alert alert-success">
-                                                {{ session('messageConverge') }}
+                                                {{ session('message') }}
                                             </div>
                                         @endif
-                                        <form wire:submit.prevent="submitConverge">
+                                        <form wire:submit.prevent="submitResume">
                                             <div class="mb-2">
                                                 <label for="exampleInputEmail1" class="form-label">Name</label>
                                                 @error('name') 
@@ -80,7 +80,7 @@
                                                 <input type="file" wire:model.defer="resume" class="form-control" id="fileID">
                                             </div>
                                             <div class="mb-2 form-check">
-                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
                                                 <label class="form-check-label" for="exampleCheck1">I Agree to Terms & Conditions</label>
                                             </div>
                                             <div class="d-flex justify-content-end">
