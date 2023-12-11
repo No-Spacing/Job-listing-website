@@ -5,10 +5,10 @@
         </div>
         <div class="red-bar text-white py-3">
             <p class="text-center fs-3">Providing decent work for Filipinos Nationwide</p>
-            <!-- <form class="d-flex justify-content-center">
-                <input class="form-control search-bar me-2" type="search" placeholder="Search" aria-label="Search">
+            <form class="d-flex justify-content-center" wire:submit="submitSearch">
+                <input class="form-control search-bar me-2" wire:model="search" type="search" placeholder="Search for Jobs" aria-label="Search">
                 <button class="btn btn-outline-light" type="submit">Search</button>
-            </form> -->
+            </form>
         </div>
 
         <div class="py-3">
@@ -65,21 +65,25 @@
 
         <div class="py-3">
             <div class="container d-flex justify-content-between">
-                <div class="">
+                <div class="d-flex flex-column">
                     <img class="" src="{{ Storage::url('images/logo2.png') }}" style="height: 50px; width: 50px"/>
                     <h6 class="">TRI-S MANPOWER <br> MANAGEMENT SERVICES</h6>
                 </div>
-                <div>
+                <div class="d-flex flex-column">
                     <h6>Quick Links</h6>
+                    <a href="{{ url('/') }}">Home</a>
+                    <a href="{{ url('/job-list') }}">Job List</a>
+                    <a href="{{ url('/about') }}">About Us</a>
+                    <a href="{{ url('/contact') }}">Contact Us</a>
                 </div>
-                <div>
+                <div class="d-flex flex-column">
                     <h6>Country</h6>
                     <span>Philippines</span>
                 </div>
-                <div>
+                <div class="d-flex flex-column">
                     <h6>Contact Details</h6>
-                    <span>(02)397-9201 | 0998-792-1769</span><br>
-                    <span>recruitment.trismanpower@gmail.com</span><br>
+                    <span>(02)397-9201 | 0998-792-1769</span>
+                    <span>recruitment.trismanpower@gmail.com</span>
                     <span>Suite 407 Columbian Building 160 <br> West Avenue Brgy. Philam, Quezon City</span>
                 </div>
 

@@ -19,7 +19,7 @@ use App\Livewire\Contact;
 
 Route::get('/', Home::class);
 
-Route::get('/job-list', JobList::class);
+Route::get('/job-list', JobList::class)->name('joblist');
 
 Route::get('/about', About::class);
 
