@@ -2,6 +2,6 @@
 ## features
     1. Livewire as Front-end UI.
     2. Laravel as Back-end
-    3. Live search for jobs available.
+    3. Live search of jobs available.
     
     
