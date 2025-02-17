@@ -8,24 +8,23 @@
     body {
         margin-bottom: 160px;
     }
-        .footer {
+    .footer {
         position: absolute;
         bottom: 0;
         width: 100%;
         height: 50px;
     }
 </style>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">   
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="{{ Storage::url('css/home.css') }}">
-        <link rel="icon" type="image/x-icon" href="{{ Storage::url('images/logo2.png') }}">
-        <title>{{ $title ?? 'TRIMMS' }}</title>
+        <link rel="stylesheet" href="css/home.css">
+        <link rel="icon" type="image/x-icon" href="images/job-icon.png">
+        <title>{{ $title ?? 'Job Finder' }}</title>
     </head>
     <body>
         @include('components.layouts.navbar')
@@ -38,7 +37,7 @@
                         <p style="color: white;">Kenboy Bldg, Central Plaza Complex, Brgy Lag-on, Daet Camarines Norte.</p>
                     </div> -->
                     <div class=" d-flex justify-content-center">
-                        <p style="color: white;">COPYRIGHT © {{ date('Y') }} Tri-S Manpower Management Services. All rights reserved.</p>
+                        <p style="color: white;">COPYRIGHT © 2023 Job Finding Website. All rights reserved.</p>
                     </div>   
                 </div>
             </div>
