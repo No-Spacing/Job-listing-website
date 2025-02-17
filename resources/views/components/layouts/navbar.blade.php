@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-        <a class="navbar-brand" href="{{ url('/') }}"><img src="{{ Storage::url('images/logo2.png') }}" style="height: auto; width: 50px"/> <span class="fw-bold">TRI-S MMS</span></a>
+        <a class="navbar-brand" href="{{ url('/') }}"><img src="images/job-icon.png" style="height: auto; width: 50px"/> <span class="fw-bold text-muted">Job Finding Website</span></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
