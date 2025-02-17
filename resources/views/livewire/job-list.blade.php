@@ -1,6 +1,5 @@
 <div>
-    
-    <div class="red-bar container mt-3 py-3">
+    <div class="red-bar py-3">
         <h1 class="text-center text-white">Job List</h1>
         <div class="d-flex justify-content-center">
             <input class="form-control search-bar me-2" wire:model.live="search" type="search" placeholder="Search" aria-label="Search">
@@ -10,7 +9,7 @@
         <div class="container">
             @foreach($jobs as $job)
             <div class="card container">
-                <img class="pt-3" src="{{ Storage::url($job->image) }}" style="height: auto; width: 150px;"/>
+                <img class="pt-3" src="{{ $job->image }}" style="height: auto; width: 150px;"/>
                 <div class="card-body">
                     <h5 class="card-title">{{ $job->name }}</h5>
                     <p class="card-text">
@@ -27,9 +26,7 @@
         @foreach($jobs as $job)
             @if($company == $job->id)
                 <div class="card container">
-                    
-                    <img class="pt-3" src="{{ Storage::url($job->image) }}" style="height: auto; width: auto;"/>
-
+                    <img class="pt-3" src="{{ $job->image }}" style="height: auto; width: auto;"/>
                     <div class="card-body">        
                         <h5 class="card-title">{{ $job->name }}</h5>
                         <p class="card-text">
