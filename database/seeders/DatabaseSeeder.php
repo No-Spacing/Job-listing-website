@@ -31,7 +31,7 @@ class DatabaseSeeder extends Seeder
                         - Windows Server administration 
                         - Windows operating systems 
                         - Basic knowledge of networking and Citrix.",
-            'image' => 'images/job-search-cover.jpeg',
+            'image' => 'images/votehub.png',
         ]);
 
         \App\Models\Job::create([
@@ -45,7 +45,7 @@ class DatabaseSeeder extends Seeder
                         - Install, configure, and maintain network hardware and software such as routers, firewalls, and switches
                         - Protect networks from unauthorized users through physical and technical means
                         - Maintain and troubleshoot storage networks",
-            'image' => 'images/job-search-cover.jpeg',
+            'image' => 'images/v-logo.png',
             
         ]);
     }
