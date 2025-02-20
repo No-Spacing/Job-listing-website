@@ -1,8 +1,9 @@
-# Job Finding Website
-## features
- 1. Livewire as Front-end UI.
- 2. Laravel as Back-end
- 3. Live search of jobs available.
+# Job Listing Website
+Job listing website that finds a job for any applicants and sends email to employer
+ - Gmail SMTP
+ - Livewire as Front-end UI.
+ - Laravel as Back-end
+ - search of jobs available.
 ## screenshots
  1. Homepage
   ![alt text](https://github.com/No-Spacing/Job_finding_website/blob/main/screenshot/screenshot1.jpg)
